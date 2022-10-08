@@ -12,6 +12,18 @@
                 "<node_internals>/**"
             ],
             "program": "${workspaceFolder}\\test.js"
+        },
+        {
+            "command": "git push -u origin --all",
+            "name": "Github Push",
+            "request": "launch",
+            "type": "node-terminal"
+        },
+        {
+            "command": "npm publish --access public",
+            "name": "NPM Publish",
+            "request": "launch",
+            "type": "node-terminal"
         }
     ]
 }
