@@ -94,20 +94,26 @@ module.exports = function (data = {}) {
     const result = num.div(denom).times(fixer);
 
     // Complete
-    if (typeof data.symbol !== 'string' || typeof data.convert !== 'number') {
+    if (typeof data.symbol !== 'string') {
         return result.toNumber();
     } else {
 
         // Prepare Convert
-        let finalResult = String(data.convert).split('');
-        for (const item in finalResult) {
-            if (Array.isArray(tinyNumbers.superscript[finalResult[item]])) {
-                finalResult[item] = tinyNumbers.superscript[finalResult[item]][0];
-            }
-        }
+        let finalResult = '';
+        if (typeof data.convert === 'number') {
 
-        // Result
-        finalResult = finalResult.join('');
+            // Convert
+            finalResult = String(data.convert).split('');
+            for (const item in finalResult) {
+                if (Array.isArray(tinyNumbers.superscript[finalResult[item]])) {
+                    finalResult[item] = tinyNumbers.superscript[finalResult[item]][0];
+                }
+            }
+
+            // Result
+            finalResult = finalResult.join('');
+
+        }
 
         // Complete
         if (typeof data.fixed !== 'number') {
