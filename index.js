@@ -110,7 +110,11 @@ module.exports = function (data = {}) {
         finalResult = finalResult.join('');
 
         // Complete
-        return data.symbol.replace('{N}', result.toString()).replace('{R}', `${finalResult}`);
+        if (typeof data.fixed !== 'number') {
+            return data.symbol.replace('{N}', result.toString()).replace('{R}', finalResult);
+        } else {
+            return data.symbol.replace('{N}', result.toFixed(data.fixed)).replace('{R}', finalResult);
+        }
 
     }
 
