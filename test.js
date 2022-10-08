@@ -1,6 +1,16 @@
 // Module
 const cryptoNumber = require('./index');
 
+/* 
+
+    DEFAULT VALUES
+
+    decimals = 18;
+    convert = 0;
+    data.value = 0;
+
+*/
+
 // Bitcoin
 console.log(cryptoNumber({
     value: '1504050020000000000', 
@@ -10,10 +20,10 @@ console.log(cryptoNumber({
     fixed: 2
 }));
 
-// BNB
+// BNB (Using Default Values)
 console.log(cryptoNumber({
-    value: '0002920020000000000', 
-    decimals: 18,
+    value: '2920020000000000', 
+    convert: 3,
     symbol: '{N} BNB{R}',
-    fixed: 5
+    fixed: 2
 }));
