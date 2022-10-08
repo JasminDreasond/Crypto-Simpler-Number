@@ -91,7 +91,21 @@ module.exports = function (data = {}) {
     if (typeof data.symbol !== 'string') {
         return result.toNumber();
     } else {
+
+        // Prepare Convert
+        let finalResult = String(data.convert).split('');
+        for (const item in finalResult) {
+            if (tinyNumbers.superscript[finalResult[item]]) {
+                finalResult[item] = tinyNumbers.superscript[finalResult[item]];
+            }
+        }
+
+        // Result
+        finalResult = finalResult.join('');
+
+        // Complete
         return data.symbol.replace('{N}', result.toString()).replace('{R}', `${tinyNumbers.superscript['('][0]}${tinyNumbers.superscript[')'][0]}`);
+
     }
 
 };
