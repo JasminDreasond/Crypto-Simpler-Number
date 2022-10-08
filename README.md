@@ -1,4 +1,39 @@
 # Crypto-Simpler-Number
 
 This project is to simplify cryptocurrency numbers to values more similar to fiat currency values.
-The complete example is present in the test.js file
+The complete example is present in the test.js file.
+
+```js
+
+// Module
+const cryptoNumber = require('./index');
+
+/* 
+
+    Decimals = Crypto Decimals (Default: 18)
+    Convert = Number of decimals to be removed (Default: 0)
+    Value = Crypto Value (Default: 0)
+
+    Symbol = The final result when the value is shown in a string
+    fixed = toFixed() result
+
+*/
+
+// Bitcoin
+console.log(cryptoNumber({
+    value: '1504050020000000000', 
+    convert: 3,
+    decimals: 18,
+    symbol: '{N} BTC{R}',
+    fixed: 2
+}));
+
+// BNB (Using Default Values)
+console.log(cryptoNumber({
+    value: '2920020000000000', 
+    convert: 3,
+    symbol: '{N} BNB{R}',
+    fixed: 2
+}));
+
+```
