@@ -36,4 +36,13 @@ console.log(cryptoNumber({
     fixed: 2
 }));
 
+/* 
+
+    Result
+
+    1504.05 BTC³
+    2.92 BNB³
+
+*/
+
 ```

@@ -28,3 +28,12 @@ console.log(cryptoNumber({
     symbol: '{N} BNB{R}',
     fixed: 2
 }));
+
+/* 
+
+    Result
+
+    1504.05 BTC³
+    2.92 BNB³
+
+*/
