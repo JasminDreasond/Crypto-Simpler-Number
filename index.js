@@ -80,9 +80,10 @@ const BigNumber = require('bignumber.js');
 module.exports = function (data = {}) {
 
     // Default Values
+    const valueType = typeof data.value;
     if (typeof data.decimals !== 'number') { data.decimals = 18; }
     if (typeof data.convert !== 'number') { data.convert = 0; }
-    if (typeof data.value !== 'number') { data.value = 0; }
+    if (valueType !== 'number' && valueType !== 'string') { data.value = 0; }
 
     // Get Value
     const num = new BigNumber(data.value);
