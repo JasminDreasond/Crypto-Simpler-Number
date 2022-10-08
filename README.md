@@ -63,6 +63,7 @@ console.log(cryptoSn({
 
     1504.05 BTC³
     2.92 BNB³
+    8.9928 SHIB⁻⁵
 
 */
 
