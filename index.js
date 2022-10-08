@@ -80,7 +80,7 @@ const tinyNumbers = {
 const BigNumber = require('bignumber.js');
 
 // Script
-module.exports = function (number = 0, decimals = 18, point = 1) {
+module.exports = function (number = 0, decimals = 18, point = 0) {
 
     // Get Value
     const num = new BigNumber(number);
@@ -88,7 +88,7 @@ module.exports = function (number = 0, decimals = 18, point = 1) {
     const denom = new BigNumber(10).pow(decimals);
     const fixer = new BigNumber(10).pow(point);
 
-    const tinyNumber = num.dividedBy(denom).dividedBy(fixer).toNumber();
+    const tinyNumber = num.div(denom).div(fixer).toNumber();
 
     // Complete
     return tinyNumber;
