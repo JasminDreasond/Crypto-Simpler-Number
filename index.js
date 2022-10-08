@@ -95,8 +95,8 @@ module.exports = function (data = {}) {
         // Prepare Convert
         let finalResult = String(data.convert).split('');
         for (const item in finalResult) {
-            if (tinyNumbers.superscript[finalResult[item]]) {
-                finalResult[item] = tinyNumbers.superscript[finalResult[item]];
+            if (Array.isArray(tinyNumbers.superscript[finalResult[item]])) {
+                finalResult[item] = tinyNumbers.superscript[finalResult[item]][0];
             }
         }
 
