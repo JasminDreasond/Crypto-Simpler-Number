@@ -1,6 +1,6 @@
 {
   "name": "crypto-sn",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "This project is to simplify cryptocurrency numbers to values more similar to fiat currency values.",
   "main": "index.js",
   "scripts": {
