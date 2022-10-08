@@ -13,7 +13,6 @@ console.log(cryptoNumber({
 // BNB
 console.log(cryptoNumber({
     value: '0002920020000000000', 
-    convert: 0,
     decimals: 18,
     symbol: '{N} BNB{R}',
     fixed: 5

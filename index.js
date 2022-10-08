@@ -100,7 +100,7 @@ module.exports = function (data = {}) {
 
         // Prepare Convert
         let finalResult = '';
-        if (typeof data.convert === 'number') {
+        if (data.convert > 0) {
 
             // Convert
             finalResult = String(data.convert).split('');
