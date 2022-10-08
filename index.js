@@ -80,7 +80,7 @@ const tinyNumbers = {
 const BigNumber = require('bignumber.js');
 
 // Script
-module.exports = function (number = 0, decimals = 18, point = 0) {
+module.exports = function (number = 0, point = 0, decimals = 18) {
 
     // Get Value
     const num = new BigNumber(number);
