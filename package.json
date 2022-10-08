@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/JasminDreasond/Crypto-Number-Helper/issues"
   },
-  "homepage": "https://github.com/JasminDreasond/Crypto-Number-Helper#readme"
+  "homepage": "https://github.com/JasminDreasond/Crypto-Number-Helper#readme",
+  "dependencies": {
+    "bignumber.js": "^9.1.0"
+  }
 }

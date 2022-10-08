@@ -1,3 +1,4 @@
+const BigNumber = require('bignumber.js');
 module.exports = function(number, point) {
 
     // Get Value
