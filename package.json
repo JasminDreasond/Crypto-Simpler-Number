@@ -15,6 +15,12 @@
   "bugs": {
     "url": "https://github.com/JasminDreasond/Crypto-Number-Helper/issues"
   },
+  "keywords": [
+    "crypto",
+    "cryptocurrency",
+    "currency",
+    "simplify"
+  ],
   "homepage": "https://github.com/JasminDreasond/Crypto-Number-Helper#readme",
   "dependencies": {
     "bignumber.js": "^9.1.0"
