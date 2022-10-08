@@ -3,11 +3,12 @@ const cryptoNumber = require('./index');
 
 /* 
 
-    DEFAULT VALUES
+    Decimals = Crypto Decimals (Default: 18)
+    Convert = Number of decimals to be removed (Default: 0)
+    Value = Crypto Value (Default: 0)
 
-    decimals = 18;
-    convert = 0;
-    data.value = 0;
+    Symbol = The final result when the value is shown in a string
+    fixed = toFixed() result
 
 */
 
