@@ -104,7 +104,7 @@ module.exports = function (data = {}) {
         finalResult = finalResult.join('');
 
         // Complete
-        return data.symbol.replace('{N}', result.toString()).replace('{R}', `${tinyNumbers.superscript['('][0]}${finalResult}${tinyNumbers.superscript[')'][0]}`);
+        return data.symbol.replace('{N}', result.toString()).replace('{R}', `${finalResult}`);
 
     }
 
