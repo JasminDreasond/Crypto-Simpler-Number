@@ -2,7 +2,7 @@
 const cryptoNumber = require('./index');
 
 // Get Number
-const result = cryptoNumber('1500000000000000000', 15, /* 18 */);
+const result = cryptoNumber('1500000000000000000', 1, /* 18 */);
 
 // Result
 console.log(result);
