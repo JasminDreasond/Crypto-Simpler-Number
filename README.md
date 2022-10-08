@@ -57,13 +57,23 @@ console.log(cryptoSn({
     fixed: 4
 }));
 
+// LUNC (Using Default Values)
+console.log(cryptoSn({
+    value: '34925000000000000000000', 
+    convert: -4,
+    symbol: '{N} LUNC{R}',
+    fixed: 6
+}));
+
 /* 
 
     Result
 
     1504.05 BTC³
     2.92 BNB³
+
     8.9928 SHIB⁻⁵
+    3.492500 LUNC⁻⁴
 
 */
 
