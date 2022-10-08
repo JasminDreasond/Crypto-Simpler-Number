@@ -79,6 +79,11 @@ const BigNumber = require('bignumber.js');
 // Script
 module.exports = function (data = {}) {
 
+    // Default Values
+    if (typeof data.decimals !== 'number') { data.decimals = 18; }
+    if (typeof data.convert !== 'number') { data.convert = 0; }
+    if (typeof data.value !== 'number') { data.value = 0; }
+
     // Get Value
     const num = new BigNumber(data.value);
 
@@ -88,7 +93,7 @@ module.exports = function (data = {}) {
     const result = num.div(denom).times(fixer);
 
     // Complete
-    if (typeof data.symbol !== 'string') {
+    if (typeof data.symbol !== 'string' || typeof data.convert !== 'number') {
         return result.toNumber();
     } else {
 
