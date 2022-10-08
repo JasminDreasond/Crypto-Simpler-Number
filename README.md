@@ -49,6 +49,14 @@ console.log(cryptoSn({
     fixed: 2
 }));
 
+// SHIB (Using Default Values)
+console.log(cryptoSn({
+    value: '899280000000000000000000', 
+    convert: -5,
+    symbol: '{N} SHIB{R}',
+    fixed: 4
+}));
+
 /* 
 
     Result
