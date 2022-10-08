@@ -6,7 +6,7 @@ The complete example is present in the test.js file.
 ```js
 
 // Module
-const cryptoNumber = require('./index');
+const cryptoNumber = require('crypto-sn');
 
 /* 
 
