@@ -6,7 +6,7 @@ The complete example is present in the test.js file.
 ```js
 
 // Module
-const cryptoNumber = require('crypto-sn');
+const cryptoSn = require('crypto-sn');
 
 /* 
 
@@ -20,7 +20,7 @@ const cryptoNumber = require('crypto-sn');
 */
 
 // Bitcoin
-console.log(cryptoNumber({
+console.log(cryptoSn({
     value: '1504050020000000000', 
     convert: 3,
     decimals: 18,
@@ -29,7 +29,7 @@ console.log(cryptoNumber({
 }));
 
 // BNB (Using Default Values)
-console.log(cryptoNumber({
+console.log(cryptoSn({
     value: '2920020000000000', 
     convert: 3,
     symbol: '{N} BNB{R}',

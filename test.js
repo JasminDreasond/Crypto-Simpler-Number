@@ -1,5 +1,5 @@
 // Module
-const cryptoNumber = require('./index');
+const cryptoSn = require('./index');
 
 /* 
 
@@ -13,7 +13,7 @@ const cryptoNumber = require('./index');
 */
 
 // Bitcoin
-console.log(cryptoNumber({
+console.log(cryptoSn({
     value: '1504050020000000000', 
     convert: 3,
     decimals: 18,
@@ -22,7 +22,7 @@ console.log(cryptoNumber({
 }));
 
 // BNB (Using Default Values)
-console.log(cryptoNumber({
+console.log(cryptoSn({
     value: '2920020000000000', 
     convert: 3,
     symbol: '{N} BNB{R}',
